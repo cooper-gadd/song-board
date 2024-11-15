@@ -1,6 +1,13 @@
-import { ThemeProvider } from "@/components/theme-provider";
 import "@/styles/globals.css";
+import { cn } from "@/lib/utils";
+import { Inter as FontSans } from "next/font/google";
 import { type Metadata } from "next";
+import { ThemeProvider } from "@/components/theme-provider";
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
   title: "Song Board",
@@ -12,16 +19,22 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
-      <body>
+    <html lang="en" className="color-scheme: dark;" suppressHydrationWarning>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="flex min-h-screen w-full flex-col bg-muted/40">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
