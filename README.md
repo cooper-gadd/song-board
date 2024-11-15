@@ -47,3 +47,10 @@ bun run db:push
 ```bash
 bun run dev
 ```
+
+## Todo
+
+- [ ] Schema
+- [ ] Seed data
+- [ ] Display songs
+- [ ] Create songs
