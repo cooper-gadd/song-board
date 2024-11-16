@@ -19,8 +19,6 @@ A simple web application that allows users to view songs and add new songs to th
 2. **Clone and Setup**
   ```bash
   git clone https://github.com/cooper-gadd/song-board.git
-  cd song-board
-  bun install
   ```
 
 3. **Go to the project directory**
