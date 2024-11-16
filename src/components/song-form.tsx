@@ -26,8 +26,8 @@ import {
 import { Input } from "./ui/input";
 
 const formSchema = z.object({
-  name: z.string({ required_error: "Add a title." }),
-  artist: z.string({ required_error: "Add an artist." }),
+  name: z.string().min(1, { message: "Add a title." }),
+  artist: z.string().min(1, { message: "Add an artist." }),
 });
 
 export function SongForm() {
