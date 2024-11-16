@@ -50,7 +50,7 @@ bun run dev
 
 ## Todo
 
-- [ ] Schema
-- [ ] Seed data
-- [ ] Display songs
-- [ ] Create songs
+- [x] Schema
+- [x] Seed data
+- [x] Display songs
+- [x] Create songs
