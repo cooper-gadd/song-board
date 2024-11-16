@@ -23,12 +23,32 @@ A simple web application that allows users to view songs and add new songs to th
   bun install
   ```
 
-3. **Database Setup**
+3. **Go to the project directory**
+  ```bash
+  cd song-board
+  ```
+
+4. **Install dependencies**
+  ```bash
+  bun install
+  ```
+
+5. **Add a `.env` file**
+  ```bash
+  touch .env
+  ```
+
+6. **Add the following to the `.env` file**
+  ```bash
+  DATABASE_URL="file:./db.sqlite"
+  ```
+
+7. **Database Setup**
   ```bash
   bun run db:push
   ```
 
-4. **Start Development Server**
+8. **Start Development Server**
   ```bash
   bun run dev
   ```
