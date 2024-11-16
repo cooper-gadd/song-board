@@ -1,10 +1,7 @@
-"use server";
+// https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations
 
-import { db } from "@/server/db";
-import { song, type CreateSong } from "@/server/db/schema";
-import { revalidatePath } from "next/cache";
-
-export async function createSong(createSong: CreateSong) {
-  await db.insert(song).values(createSong);
-  revalidatePath("/");
+export async function createSong() {
+  // https://orm.drizzle.team/docs/insert
+  // https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration#on-demand-revalidation-with-revalidatepath
+  console.log("createSong");
 }
