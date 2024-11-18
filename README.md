@@ -51,11 +51,11 @@ A simple web application that allows users to view songs and add new songs to th
   bun run dev
   ```
 
-## Rapid ProtoTyping with Bun and NextJS
+## Rapid prototyping with Bun, SQLite, Next.js
 
-* BunJS and NextJS enable easy high fidelity prototyping
-* BunJS includes native sqlite driver and supports many npm libraries/frameworks
-* NextJS builds on React with performance and efficiency features
+* Bun and Next.js enable easy high fidelity prototyping
+* Bun includes native sqlite driver and supports many npm libraries/frameworks
+* Next.js builds on React with performance and efficiency features
 
 ![bunNext](https://github.com/user-attachments/assets/7f9fad74-4401-42dc-815a-a2b0e810332c)
 
@@ -83,9 +83,9 @@ A simple web application that allows users to view songs and add new songs to th
 * Includes bundling tool
 * Native sqlite driver support
 
-### What is NextJS?
+### What is Next.js?
 
-![nextjs](https://github.com/user-attachments/assets/726ae889-76d4-4341-8901-c51957a45eV3c)
+![Next.js](https://github.com/user-attachments/assets/726ae889-76d4-4341-8901-c51957a45eV3c)
 
 * Framework building on React
 * Improves performance through server-side rendering
