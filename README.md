@@ -85,7 +85,7 @@ A simple web application that allows users to view songs and add new songs to th
 
 ### What is Next.js?
 
-![Next.js](https://github.com/user-attachments/assets/726ae889-76d4-4341-8901-c51957a45eV3c)
+![nextjs](https://github.com/user-attachments/assets/726ae889-76d4-4341-8901-c51957a45eV3c)
 
 * Framework building on React
 * Improves performance through server-side rendering
