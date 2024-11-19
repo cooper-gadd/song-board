@@ -89,6 +89,8 @@ A simple web application that allows users to view songs and add new songs to th
 
 ![carbon(2)](https://github.com/user-attachments/assets/f3402344-7eed-4681-a6af-d9e87ac771d1)
 
+![Screenshot 2024-11-18 214514](https://github.com/user-attachments/assets/208f822b-db26-461f-9cc3-dd1e8a947cb2)
+
 ![carbon(3)](https://github.com/user-attachments/assets/7f957f61-2d96-453f-871c-4e5b73ad2734)
 
 ![carbon(4)](https://github.com/user-attachments/assets/421b84f5-7eaf-4516-b451-7e636eaaf4c0)
