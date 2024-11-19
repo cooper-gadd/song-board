@@ -102,6 +102,9 @@ Bun Hashing
 Starting an sqlite service
 ![carbon(4)](https://github.com/user-attachments/assets/421b84f5-7eaf-4516-b451-7e636eaaf4c0)
 
+Running a C program in JS 
+![carbon(6)](https://github.com/user-attachments/assets/e3a808e7-f721-4db2-a35c-c4f7142ecb14)
+
 ### What is Next.js?
 
 * Framework building on React
