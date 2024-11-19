@@ -83,7 +83,7 @@ A simple web application that allows users to view songs and add new songs to th
 * Includes bundling tool
 * Native sqlite driver support
 
-* ![carbon](https://github.com/user-attachments/assets/8e933c82-d46d-470c-8b12-8d8498f55c5b)
+![carbon](https://github.com/user-attachments/assets/8e933c82-d46d-470c-8b12-8d8498f55c5b)
 
 ![carbon(1)](https://github.com/user-attachments/assets/d943de97-b9ce-4e1b-ac69-7b1265e188c2)
 
