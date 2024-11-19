@@ -124,8 +124,6 @@ Building with Turbopack time Difference
 * No need for additional backend server
 * Includes performance optimizations over React
 
-Using Turbopacl with NextJS
-
 ## Todo
 
 - [ ] Schema
