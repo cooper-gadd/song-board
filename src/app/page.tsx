@@ -5,26 +5,11 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
+import { db } from "@/server/db";
 
 export default async function Page() {
   // https://orm.drizzle.team/docs/rqb#find-many
-  const songs = [
-    {
-      id: 1,
-      name: "Hotline Bling",
-      artist: "Drake",
-    },
-    {
-      id: 2,
-      name: "Hotline Bling",
-      artist: "Drake",
-    },
-    {
-      id: 3,
-      name: "Hotline Bling",
-      artist: "Drake",
-    },
-  ];
+  const songs = await db.query.songs.findMany();
 
   return (
     <div className="container flex flex-1 flex-col gap-8 p-4 md:p-8">
