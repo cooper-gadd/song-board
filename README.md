@@ -104,9 +104,6 @@ Starting an sqlite service
 
 ### What is Next.js?
 
-Building with Turbopack time Difference
-![turbopack](https://github.com/user-attachments/assets/d0623510-9bb1-4aed-b739-49574cf7ac64)
-
 * Framework building on React
 * Improves performance through server-side rendering
 * Simplifies routing
@@ -123,6 +120,9 @@ Building with Turbopack time Difference
 * Enables API routes for serverless functionality
 * No need for additional backend server
 * Includes performance optimizations over React
+* Building with Turbopack for faster builds
+
+![turbopack](https://github.com/user-attachments/assets/d0623510-9bb1-4aed-b739-49574cf7ac64)
 
 ## Todo
 
