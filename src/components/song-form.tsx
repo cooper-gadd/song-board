@@ -28,6 +28,8 @@ import { Input } from "@/components/ui/input";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { createSong } from "@/app/actions";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   name: z
@@ -59,10 +61,9 @@ export function SongForm() {
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    await createSong(values);
+    toast(`${values.name} by ${values.artist} has been created!`);
   }
 
   return (
