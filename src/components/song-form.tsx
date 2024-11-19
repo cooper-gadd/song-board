@@ -1,14 +1,6 @@
 "use client";
 
-import { Button } from "./ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "./ui/dialog";
+import { createSong } from "@/app/actions";
 import {
   Form,
   FormControl,
@@ -19,17 +11,19 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-
-// https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations
-// https://ui.shadcn.com/docs/components/dialog
-// https://ui.shadcn.com/docs/components/form
-// https://ui.shadcn.com/docs/components/sonner
-
-import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { createSong } from "@/app/actions";
 import { toast } from "sonner";
+import { z } from "zod";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const formSchema = z.object({
   name: z
@@ -51,7 +45,6 @@ const formSchema = z.object({
 });
 
 export function SongForm() {
-  // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -60,7 +53,6 @@ export function SongForm() {
     },
   });
 
-  // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof formSchema>) {
     await createSong(values);
     toast(`${values.name} by ${values.artist} has been created!`);

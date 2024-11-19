@@ -18,6 +18,4 @@ export const songs = createTable("song", {
   artist: text("artist", { length: 256 }).notNull(),
 });
 
-// infer select
-// https://orm.drizzle.team/docs/latest-releases/drizzle-orm-v0283#-added-tableinferselect--table_inferselect-and-tableinferinsert--table_inferinsert-for-more-convenient-table-model-type-inference
 export type CreateSong = InferInsertModel<typeof songs>;

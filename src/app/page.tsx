@@ -8,7 +8,6 @@ import {
 import { db } from "@/server/db";
 
 export default async function Page() {
-  // https://orm.drizzle.team/docs/rqb#find-many
   const songs = await db.query.songs.findMany();
 
   return (

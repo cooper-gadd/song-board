@@ -132,4 +132,4 @@ Running a C program in JS
 - [x] Schema
 - [x] Seed data
 - [x] Display songs
-- [ ] Create songs
+- [x] Create songs
