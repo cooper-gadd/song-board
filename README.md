@@ -83,6 +83,18 @@ A simple web application that allows users to view songs and add new songs to th
 * Includes bundling tool
 * Native sqlite driver support
 
+* ![carbon](https://github.com/user-attachments/assets/8e933c82-d46d-470c-8b12-8d8498f55c5b)
+
+![carbon(1)](https://github.com/user-attachments/assets/d943de97-b9ce-4e1b-ac69-7b1265e188c2)
+
+![carbon(2)](https://github.com/user-attachments/assets/f3402344-7eed-4681-a6af-d9e87ac771d1)
+
+![carbon(3)](https://github.com/user-attachments/assets/7f957f61-2d96-453f-871c-4e5b73ad2734)
+
+![carbon(4)](https://github.com/user-attachments/assets/421b84f5-7eaf-4516-b451-7e636eaaf4c0)
+
+![Screenshot 2024-11-18 214514](https://github.com/user-attachments/assets/2078d7b6-08e2-4458-a53f-7b707acfc8ad)
+
 ### What is Next.js?
 
 ![nextjs](https://github.com/user-attachments/assets/726ae889-76d4-4341-8901-c51957a45e3c)
