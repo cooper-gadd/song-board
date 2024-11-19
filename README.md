@@ -130,6 +130,6 @@ Running a C program in JS
 ## Todo
 
 - [x] Schema
-- [ ] Seed data
+- [x] Seed data
 - [ ] Display songs
 - [ ] Create songs
