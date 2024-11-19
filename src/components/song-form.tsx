@@ -55,6 +55,8 @@ export function SongForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     await createSong(values);
+    form.reset();
+    form.clearErrors();
     toast(`${values.name} by ${values.artist} has been created!`);
   }
 
