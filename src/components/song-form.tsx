@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
-import { z } from "zod";
+import { type z } from "zod";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -24,36 +24,18 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-
-const formSchema = z.object({
-  name: z
-    .string()
-    .min(1, {
-      message: "Name needs to be at least 1 character long",
-    })
-    .max(256, {
-      message: "Name needs to be at most 256 characters long",
-    }),
-  artist: z
-    .string()
-    .min(1, {
-      message: "Artist needs to be at least 1 character long",
-    })
-    .max(256, {
-      message: "Artist needs to be at most 256 characters long",
-    }),
-});
+import { songSchema } from "@/lib/schemas";
 
 export function SongForm() {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof songSchema>>({
+    resolver: zodResolver(songSchema),
     defaultValues: {
       name: "",
       artist: "",
     },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof songSchema>) {
     await createSong(values);
     form.reset();
     form.clearErrors();
