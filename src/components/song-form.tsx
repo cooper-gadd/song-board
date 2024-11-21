@@ -25,8 +25,10 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { songSchema } from "@/lib/schemas";
+import React from "react";
 
 export function SongForm() {
+  const [open, setOpen] = React.useState(false);
   const form = useForm<z.infer<typeof songSchema>>({
     resolver: zodResolver(songSchema),
     defaultValues: {
@@ -36,14 +38,19 @@ export function SongForm() {
   });
 
   async function onSubmit(values: z.infer<typeof songSchema>) {
-    await createSong(values);
-    form.reset();
-    form.clearErrors();
-    toast(`${values.name} by ${values.artist} has been created!`);
+    try {
+      await createSong(values);
+      form.reset();
+      form.clearErrors();
+      toast(`${values.name} by ${values.artist} has been created!`);
+      setOpen(false);
+    } catch {
+      toast.error("An error occurred while creating the song.");
+    }
   }
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button>Create Song</Button>
       </DialogTrigger>
